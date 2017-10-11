@@ -1,0 +1,110 @@
+body{
+	background-color: #303030;
+	font-family: 'Lato', sans-serif;
+}
+
+#container{
+	margin-left: auto;
+	margin-right: auto;
+	width: 800px;
+}
+
+#logo{
+	margin-right: auto;
+	margin-left: auto;
+	width: 780px;
+	height: 50px;
+	border: 2px solid #000000;
+	margin-top: 10px;
+	font-size: 30px;
+	text-align: center;
+	letter-spacing: 1px;
+	font-weight: bold;
+	color: white;
+	
+}
+
+#zawartosc{
+	margin-right: auto;
+	margin-left: auto;
+	width: 770px;
+	overflow: auto;
+	border: 0px solid #000000;
+	margin-top: 10px;
+	text-align: justify;
+	padding: 5px;
+
+}
+
+#footer{
+	margin-right: auto;
+	margin-left: auto;
+	width: 780px;
+	min-height: 30px;
+	border: 2px solid #000000;
+	margin-top: 15px;
+}
+
+#HTML{
+	width: 375px;
+	margin: 5px;
+	height: 215px;
+	float: left;
+	text-align: center;
+	background-color: #e05418;
+	padding-top: 10px;
+}
+
+#HTML:hover{
+	background-color: #d04307;
+}
+
+#CSS{
+	width: 375px;
+	margin: 5px;
+	height: 215px;
+	float: left;
+	text-align: center;
+	background-color: #0170ba;
+	padding-top: 10px;	
+}
+
+#CSS:hover{
+	background-color: #0060a9;
+}
+
+#JavaScript{
+	width: 375px;
+	margin: 5px;
+	height: 215px;
+	float: left;
+	text-align: center;
+	background-color: #e5a228;	
+	padding-top: 10px;
+}
+
+#JavaScript:hover{
+	background-color: #d49117;
+}
+
+#PHP{
+	width: 375px;
+	margin: 5px;
+	height: 215px;
+	float: left;
+	text-align: center;
+	background-color: #6a7db7;	
+	padding-top: 10px;
+}
+
+#PHP:hover{
+	background-color: #596ca6;
+}
+
+
+
+
+
+
+
+
