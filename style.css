@@ -1,7 +1,7 @@
 body{
 	background-color: #303030;
 	font-family: 'Lato', sans-serif;
-	color: #aaaaaa;
+	color: white;
 }
 
 a, a:hover, a:active{
@@ -39,20 +39,26 @@ a, a:hover, a:active{
 	min-height: 100px;
 	border: 2px solid #aaaaaa;
 	margin-top: 2px;
-	text-align: justify;
 	padding: 5px;
 }
 
-.informacje{
+.lista{
 	margin-right: auto;
 	margin-left: auto;
 	width: 750px;
 	overflow: auto;
 	border: 2px solid #aaaaaa;
-	text-align: justify;
 	padding: 5px;	
 }
 
+.pojecia{
+	margin-right: auto;
+	margin-left: auto;
+	width: 750px;
+	overflow: auto;
+	border: 0px solid #aaaaaa;
+	padding: 5px;	
+}
 
 #footer{
 	margin-right: auto;
@@ -123,6 +129,17 @@ a, a:hover, a:active{
 	background-color: #596ca6;
 }
 
+.kod{
+	background-color: white;
+	overflow: auto;
+	display: inline-block;
+	color: #7F00FF;
+	letter-spacing: 1px;
+	margin-top: 5px;
+	padding: 5px;
+	font-family: 'Source Code Pro', monospace;
+	font-size: 15px;
+}
 
 
 
