@@ -90,7 +90,6 @@
                         <ul>
                             <li>onerror</li>
                             <li>onload</li>
-                            <li>onmessage</li> 
                         </ul>
                     </li>          
                 </ol>
@@ -147,8 +146,17 @@
 					
 					<span style="color: lime; letter-spacing: 1px;">onerror</span> - skrypt przeznaczony do uruchomienia w wypadku błędu<br/>
 					<div class="kod">
-					&lt;img src="ścieżka/do/pliku" onerror="funkcja"&gt;
+					&lt;img src="ścieżka/do/pliku" onerror="funkcja()"&gt;
 					</div>
+					
+					<br><br>
+					
+					<span style="color: lime; letter-spacing: 1px;">onload</span> - skrypt przeznaczony do uruchomienia po załadowaniu strony<br/>
+					<div class="kod">
+					&lt;body onload="funkcja()"&gt;
+					</div>
+					
+					
             </div>
                
         </div>
