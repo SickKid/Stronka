@@ -10,15 +10,6 @@ a, a:hover, a:active{
 	color: #eeeeee;
 }
 
-li > a{
-	color: #ffffff;
-}
-
-li > a:hover{
-	color: #cccccc;
-	text-decoration: underline;
-}
-
 #container{
 	margin-left: auto;
 	margin-right: auto;
@@ -184,4 +175,30 @@ li > a:hover{
 
 .scrollup:hover{
 	opacity: 1.0;
+}
+
+h2{
+	color: #e05418;
+}
+
+ol > li > a{
+	color: #e05418;
+}
+
+ol > li > a:hover{
+	color: #d04307;
+}
+
+ol > li > ul > li > a{
+	color: #ffffff;
+}
+
+ol > li > ul > li > a:hover{
+	color: #cccccc;
+}
+
+h3{
+	letter-spacing: 2px;
+	font-size: 20px;
+	text-decoration: underline;
 }
