@@ -1,5 +1,5 @@
 body{
-	background-color: #303030;
+	background: url("img/escheresque_ste.png");
 	font-family: 'Lato', sans-serif;
 	color: white;
 }
@@ -46,7 +46,7 @@ li > a:hover{
 	width: 770px;
 	overflow: auto;
 	min-height: 100px;
-	border: 2px solid #aaaaaa;
+	border: 0px solid #aaaaaa;
 	margin-top: 2px;
 	padding: 5px;
 }
@@ -57,16 +57,19 @@ li > a:hover{
 	width: 750px;
 	overflow: auto;
 	border: 2px solid #aaaaaa;
-	padding: 5px;	
+	padding: 5px;
+	background: rgba(24, 24, 24, 0.7);	
 }
 
 .pojecia{
 	margin-right: auto;
 	margin-left: auto;
+	margin-top: 5px;
 	width: 750px;
 	overflow: auto;
-	border: 0px solid #aaaaaa;
-	padding: 5px;	
+	border: 2px solid #aaaaaa;
+	padding: 5px;
+	background: rgba(24, 24, 24, 0.7);	
 }
 
 #footer{
