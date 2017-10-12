@@ -159,4 +159,9 @@ li > a:hover{
 	right: 200px;
 	bottom: 50px;
 	display: none;
+	opacity: 0.5;
+}
+
+.scrollup:hover{
+	opacity: 1.0;
 }

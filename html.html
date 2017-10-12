@@ -25,8 +25,8 @@
 			//zresetuj scrolla
 			$.scrollTo(0);
 			
-			$('#link00').click(function() { $.scrollTo($('#header00'), 500); });
-			$('#link01').click(function() { $.scrollTo($('#header01'), 500); });
+			$('#link00').click(function() { $.scrollTo($('#sekcja-header'), 500); });
+			$('#link01').click(function() { $.scrollTo($('#title'), 500); });
 			$('.scrollup').click(function() { $.scrollTo($('body'), 500); });
 		
 		}
@@ -67,9 +67,9 @@
                 <h4>Spis treści</h4>
                 <ol>
                     <li>
-                        <a id="link00" href="#header00">Sekcja header</a>
+                        <a id="link00" href="#sekcja-header">Sekcja header</a>
                         <ul>
-                            <li><a id="link01" href="#header01">title</a></li>
+                            <li><a id="link01" href="#title">title</a></li>
                             <li>meta</li>
                             <li>link</li>
                         </ul>
@@ -98,9 +98,9 @@
             </div>
    
             <div class="pojecia">
-                    <h2 id="header00">1. Polecenia w headerz'e</h2>
+                    <h2 id="sekcja-header">1. Sekcja header</h2>
                    
-                    <span id="header01" style="color: lime; letter-spacing: 1px;">title</span> - pozwala na zmianę tytułu strony, który jest wyświetlany na górnym pasku przeglądarki
+                    <span id="title" style="color: lime; letter-spacing: 1px;">title</span> - pozwala na zmianę tytułu strony, który jest wyświetlany na górnym pasku przeglądarki
                     <div class="kod">
                         &lt;title&gt;TYTUŁ STRONY&lt;/title&gt;
                     </div> <br><br>
