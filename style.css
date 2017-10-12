@@ -29,15 +29,16 @@ li > a:hover{
 	margin-right: auto;
 	margin-left: auto;
 	width: 780px;
-	height: 50px;
+	height: 40px;
 	border: 0px solid #000000;
 	margin-top: 10px;
+	margin-bottom: 10px;
 	font-size: 30px;
 	text-align: center;
 	letter-spacing: 1px;
 	font-weight: bold;
 	color: #eeeeee;
-	border-bottom: 0px solid #000000;
+	border-bottom: 2px solid #ddd;
 }
 
 #zawartosc{
