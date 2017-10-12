@@ -10,6 +10,15 @@ a, a:hover, a:active{
 	color: #eeeeee;
 }
 
+li > a{
+	color: #ffffff;
+}
+
+li > a:hover{
+	color: #cccccc;
+	text-decoration: underline;
+}
+
 #container{
 	margin-left: auto;
 	margin-right: auto;
@@ -139,4 +148,15 @@ a, a:hover, a:active{
 	padding: 5px;
 	font-family: 'Source Code Pro', monospace;
 	font-size: 15px;
+}
+
+.scrollup{
+	width: 64px;
+	height: 64px;
+	text-decoration: none;
+	background: url("img/up.png") no-repeat 0px 0px;
+	position: fixed;
+	right: 200px;
+	bottom: 50px;
+	display: none;
 }

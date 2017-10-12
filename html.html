@@ -15,6 +15,34 @@
    
     <link href="https://fonts.googleapis.com/css?family=Lato&amp;subset=latin-ext" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	
+	<script src="jquery.scrollTo.min.js"></script>
+	
+	<script>
+	
+		jQuery(function($){
+			//zresetuj scrolla
+			$.scrollTo(0);
+			
+			$('#link00').click(function() { $.scrollTo($('#header00'), 500); });
+			$('#link01').click(function() { $.scrollTo($('#header01'), 500); });
+			$('.scrollup').click(function() { $.scrollTo($('body'), 500); });
+		
+		}
+		);
+		
+		//pokaż podczas przewijania
+		$(window).scroll(function(){
+			if($(this).scrollTop()>300) $('.scrollup').fadeIn();
+			else $('.scrollup').fadeOut();
+		
+		}
+							
+		
+		);
+	
+	</script>	
    
 </head>
  
@@ -33,13 +61,15 @@
        
         <div id="zawartosc">
            
+		   	<a href="#" class="scrollup"></a>
+		   
             <div class="spis">
                 <h4>Spis treści</h4>
                 <ol>
                     <li>
-                        Sekcja header
+                        <a id="link00" href="#header00">Sekcja header</a>
                         <ul>
-                            <li>title</li>
+                            <li><a id="link01" href="#header01">title</a></li>
                             <li>meta</li>
                             <li>link</li>
                         </ul>
@@ -68,9 +98,9 @@
             </div>
    
             <div class="pojecia">
-                    <h2>1. Polecenia w headerz'e</h2>
+                    <h2 id="header00">1. Polecenia w headerz'e</h2>
                    
-                    <span style="color: lime; letter-spacing: 1px;">title</span> - pozwala na zmianę tytułu strony, który jest wyświetlany na górnym pasku przeglądarki
+                    <span id="header01" style="color: lime; letter-spacing: 1px;">title</span> - pozwala na zmianę tytułu strony, który jest wyświetlany na górnym pasku przeglądarki
                     <div class="kod">
                         &lt;title&gt;TYTUŁ STRONY&lt;/title&gt;
                     </div> <br><br>
