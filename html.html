@@ -27,6 +27,10 @@
 			
 			$('#link00').click(function() { $.scrollTo($('#sekcja-header'), 500); });
 			$('#link01').click(function() { $.scrollTo($('#title'), 500); });
+			$('#link02').click(function() { $.scrollTo($('#meta'), 500); });
+			$('#link03').click(function() { $.scrollTo($('#link'), 500); });
+			$('#link04').click(function() { $.scrollTo($('#script'), 500); });
+			
 			$('.scrollup').click(function() { $.scrollTo($('body'), 500); });
 		
 		}
@@ -70,8 +74,9 @@
                         <a id="link00" href="#sekcja-header">Sekcja header</a>
                         <ul>
                             <li><a id="link01" href="#title">title</a></li>
-                            <li>meta</li>
-                            <li>link</li>
+                            <li><a id="link02" href="#meta">meta</a></li>
+                            <li><a id="link03" href="#link">link</a></li>
+                            <li><a id="link04" href="#script">script</a></li>
                         </ul>
                    
                     </li>
@@ -99,44 +104,61 @@
             <div class="pojecia">
                     <h2 id="sekcja-header">1. Sekcja header</h2>
                    
-                    <span id="title" style="color: lime; letter-spacing: 1px;">title</span> - pozwala na zmianę tytułu strony, który jest wyświetlany na górnym pasku przeglądarki
+                    <div id="title" class="tytul">title</div> - pozwala na zmianę tytułu strony, który jest wyświetlany na górnym pasku przeglądarki
                     <div class="kod">
-                        &lt;title&gt;TYTUŁ STRONY&lt;/title&gt;
+                        &lt;title&gt;<span style="color: red">TYTUŁ STRONY</span>&lt;/title&gt;
                     </div> <br><br>
                    
-                    <span style="color: lime; letter-spacing: 1px;">meta</span> - znacznik odpowiedzialny za metadane strony
+                    <div id="meta" class="tytul">meta</div> - znacznik odpowiedzialny za metadane strony
                     <div class="kod">
                           &lt;meta charset="UTF-8"&gt; <br>
                           &lt;meta name="description" content="Opis strony"&gt; <br>
                           &lt;meta name="keywords" content="Słowa, kluczowe, tagi"&gt; <br>
                           &lt;meta name="author" content="Autor"&gt; <br>
                           &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt; <br>
-                    </div>
+                    </div> <br><br>
+					
+					<div id="link" class="tytul">link</div> - służy do podpięcia stylu, który znajduje się poza plikiem html
+                    <div class="kod">
+                        &lt;link rel="stylesheet" type="text/css" href="style.css" /&gt;
+                    </div> <br><br>
+					
+					<div id="script" class="tytul">script</div> - służy do podpięcia skryptu, który znajduje się poza plikiem html
+                    <div class="kod">
+                        &lt;script src="ścieżka"&gt;&lt;/script&gt;
+					</div> <br>
+						
+						Skryptu można użyć również bezpośrednio w pliku html <br>
+						<div class="kod">
+							&lt;script&gt;<span style="color: red">SKRYPT</span>&lt;/script&gt;
+						</div>
+                     <br><br>					
+					
 
 					<br><br>
 					
                     <h2>2. Sekcja body </h2>
 					<span style="color: aqua">Atrybuty Główne</span><br><br>
 						
-                    <span style="color: lime; letter-spacing: 1px;">class</span> - Określa jedną lub więcej nazw klas dla elementu (dotyczy klasy w arkuszu stylów)
+                    <div class="tytul">class</div> - Określa jedną lub więcej nazw klas dla elementu (dotyczy klasy w arkuszu stylów)
                     <div class="kod">
                     &lt;div class="nazwa klasy"&gt;&lt;/div&gt;
                     </div>
 					<br><br>
 					
-					<span style="color: lime; letter-spacing: 1px;">id</span> - określa unikatową nazwę danego elementu <br/>
+					<div class="tytul">id</div> - określa unikatową nazwę danego elementu <br/>
 					<div class="kod">
 					&lt;div id="nazwa"&gt;&lt;/div&gt;<br>
 					</div>
 					<br><br>
 					
-					<span style="color: lime; letter-spacing: 1px;">style</span> - określa wbudowany styl CSS dla elementu<br/>
+					<div class="tytul">style</div> - określa wbudowany styl CSS dla elementu<br/>
 					<div class="kod">
 					&lt;span style="atrybut CSS: wartość atrybutu"&gt;&lt;span&gt;
 					</div>
 					<br><br>
 					
-					<span style="color: lime; letter-spacing: 1px;">title</span> - określa dodatkowe informacje o elemencie <br/>
+					<div class="tytul">title</div> - określa dodatkowe informacje o elemencie <br/>
 					<div class="kod">
 					&lt;p title="informacje"&gt;&lt;/p&gt;
 					</div>
@@ -145,14 +167,14 @@
 					<span style="color: aqua">Atrybuty zdarzeń okna</span>
 					<br><br>
 					
-					<span style="color: lime; letter-spacing: 1px;">onerror</span> - skrypt przeznaczony do uruchomienia w wypadku błędu<br/>
+					<div class="tytul">onerror</div> - skrypt przeznaczony do uruchomienia w wypadku błędu<br/>
 					<div class="kod">
 					&lt;img src="ścieżka/do/pliku" onerror="funkcja()"&gt;
 					</div>
 					
 					<br><br>
 					
-					<span style="color: lime; letter-spacing: 1px;">onload</span> - skrypt przeznaczony do uruchomienia po załadowaniu strony<br/>
+					<div class="tytul">onload</div> - skrypt przeznaczony do uruchomienia po załadowaniu strony<br/>
 					<div class="kod">
 					&lt;body onload="funkcja()"&gt;
 					</div>

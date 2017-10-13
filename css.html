@@ -1,99 +1,140 @@
-﻿<!DOCTYPE HTML>
+<!DOCTYPE HTML>
 <html lang="pl">
 <head>
-	<meta charset="utf-8" />
-	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+   
+    <title>Wszystko w pigułce</title>
+   
+    <meta name="description" content="Opis w Google" />
+    <meta name="keywords" content="słowa, kluczowe, wypisane, po, porzecinku" />
+   
+    <link rel="stylesheet" href="style.css" type="text/css" />
+   
+    <link rel="stylesheet" href="css/fontello.css" type="text/css" />
+   
+    <link href="https://fonts.googleapis.com/css?family=Lato&amp;subset=latin-ext" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	
-	<title>Wszystko w pigułce</title>
+	<script src="jquery.scrollTo.min.js"></script>
 	
-	<meta name="description" content="Opis w Google" />
-	<meta name="keywords" content="słowa, kluczowe, wypisane, po, porzecinku" />
+	<script>
 	
-	<link rel="stylesheet" href="style.css" type="text/css" />
+		jQuery(function($){
+			//zresetuj scrolla
+			$.scrollTo(0);
+			
+			$('#link00').click(function() { $.scrollTo($('#listy'), 500); });
+			$('#link01').click(function() { $.scrollTo($('#punktacja-listy'), 500); });
+			$('#link02').click(function() { $.scrollTo($('#grafika-listy'), 500); });
+			$('#link000000').click(function() { $.scrollTo($('#pozostale'), 500); });
+			$('#link000001').click(function() { $.scrollTo($('#wartosci-obok-siebie'), 500); });
+			
+			$('.scrollup').click(function() { $.scrollTo($('body'), 500); });
+		
+		}
+		);
+		
+		//pokaż podczas przewijania
+		$(window).scroll(function(){
+			if($(this).scrollTop()>300) $('.scrollup').fadeIn();
+			else $('.scrollup').fadeOut();
+		
+		}
+							
+		
+		);
 	
-	<link rel="stylesheet" href="css/fontello.css" type="text/css" />
-	
-	<link href="https://fonts.googleapis.com/css?family=Lato&amp;subset=latin-ext" rel="stylesheet">
-	
+	</script>	
+   
 </head>
-
-
-
+ 
+ 
+ 
 <body>
+ 
+    <div id="container">
+   
+        <div id="logo">
+            <a href="index.html">
+            <i class="icon-file-code"></i>
+            <span style="color: #e05418">HTML,</span> <span style="color: #0170ba">CSS,</span> <span style="color: #e5a228">JS,</span>
+            <span style="color: #6a7db7">PHP</span> - wszystko w jednym miejscu!</a>
+        </div>
+       
+        <div id="zawartosc">
+           
+		   	<a href="#" class="scrollup"></a>
+		   
+            <div class="spis">
+                <h3>Spis treści</h3>
+                <ol>
+                    <li>
+                        <a id="link00" href="#listy">Listy</a>
+                        <ul>
+                            <li><a id="link01" href="#punktacja-listy">Znaki/punktacja listy</a></li>
+                            <li><a id="link02" href="#grafika-listy">Grafika jako punktacja listy</a></li>
+                        </ul> 
+					</li>
+					
+					<li>
+						<a id="link000000" href="#pozostale">Pozostałe</a>
+						<ul>
+							<li><a id="link000001" href="#wartosci-obok-siebie">Wartości obok siebie</a></li>
+						</ul>
+                    </li>         
+                </ol>
+                   
+            </div>
+   
+            <div class="pojecia">
+                    <h2 id="listy">1. Listy</h2>
+                   
+                    <div id="punktacja-listy" class="tytul">Znaki/punktacja listy</div>
+                    <div class="kod">
+                       list-style-type: <span style="color: red"><i>wartość;</i></span>
+                    </div><br>
+					<u>Przykłady</u> <br>
+					<div class="przyklady">
+						none - <c>brak numeracji/znaku</c> <br>
+						disc - <c>wypełnione kółka</c> <br>
+						circle - <c>obręcze</c> <br>
+						square - <c>kwadraty</c> <br>
+						inherit - <c> przyjmuje styl swojego "rodzica"</c>
+					</div>
+					
+					<br><br>
+                   
+				   <div id="grafika-listy" class="tytul">Grafika jako punktacja listy</div>
+				   <div class="kod">
+						list-style-image: <span style="color: red"><i>wartość;</i></span>
+					</div><br>
+					<u>Przykłady</u> <br>
+					<div class="przyklady">
+						none - <c>brak obrazka</c> <br>
+						url - <c>obrazek z podaj ścieżki</c> <br>
+						initial - <c> ustawia styl domyślny</c> <br>
+						inherit - <c> przyjmuje styl swojego "rodzica"</c>
+					</div>
+					
+					<h2 id="pozostale">2. Pozostałe</h2>
+					
+					<div id="wartosci-obok-siebie" class="tytul">Wartości obok siebie</div>
+					<div class="kod">
+						display: <span style="color: red"><i>inline-block;</i></span>
+					<div>
 
-	<div id="container">
-	
-		<div id="logo">
-			<a href="index.html">
-			<i class="icon-file-code"></i>
-			<span style="color: #e05418">HTML,</span> <span style="color: #0170ba">CSS,</span> <span style="color: #e5a228">JS,</span> 
-			<span style="color: #6a7db7">PHP</span> - wszystko w jednym miejscu!</a>
-		</div>
-		
-		
-		<div id="zawartosc">
-			
-			
-			<div class="informacje">
-			
-			 <ol> 
-				<li>
-					Podstawowe funkcje css/ kształty obiektóww
-					<ul>
-						<li>width - szerokość</li>
-						<li>height - wysokość</li>
-						<li>margin - marginesy</li>
-					</ul>
-				
-				</li>
-				
-				<li>
-					Drugi punkt
-					<ul>
-						<li>Pierwszy podpunkt</li>
-						<li>Drugi podpunkt</li>
-						<li>Trzeci podpunkt</li>
-					</ul>
-				</li>
-				
-				<li>
-					Trzeci punkt
-					<ul>
-						<li>Pierwszy podpunkt</li>
-						<li>Drugi podpunkt</li>
-						<li>Trzeci podpunkt</li>
-					</ul>
-				</li>
-
-				<li>
-					Czwarty punkt
-					<ul>
-						<li>Pierwszy podpunkt</li>
-						<li>Drugi podpunkt</li>
-						<li>Trzeci podpunkt</li>
-					</ul>
-				</li>
-				
-			</ol>			
-			
-			
-			<h1>Polecenia w headerz'e</h1>
-				[1]title
-			
-			</div> 
-			
-			</div>
-			
-		</div>
-	
-	
-	</div>
-	
-	<div id="footer">
-		Strona wykonana przez: Jakub Kozupa, Bartosz Katulski. &copy; Wszelkie prawa zastrzeżone.
-	</div>
-
-	
-	
+					
+            </div>
+               
+        </div>
+   
+    </div>
+   
+    <div id="footer">
+        Strona wykonana przez: Jakub Kozupa, Bartosz Katulski. &copy; Wszelkie prawa zastrzeżone.
+    </div>
+   
 </body>
 </html>
